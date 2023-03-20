@@ -13,3 +13,6 @@
     --font-public-size-mobile-menu: 40px;
     --font-public-size-mobile-botao: 18px;
 }
+body {
+    background-color: #000000;
+}
