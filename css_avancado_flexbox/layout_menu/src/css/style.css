@@ -1,0 +1,15 @@
+:root {
+    --cor-background: #5BC241;
+    --cor-fonte-clara: #FFFFFF;
+    --cor-fonte-escura: #000000;
+    --font-public-family: 'Public Sans', sans-serif;
+    --font-public-weight-light: 300;
+    --font-public-weight-regular: 400;
+    --font-public-weight-extrabold: 800;
+    --font-public-size-desktop-logo: 20px;
+    --font-public-size-desktop-menu: 15px;
+    --font-public-size-desktop-botao: 15px;
+    --font-public-size-mobile-logo: 40px;
+    --font-public-size-mobile-menu: 40px;
+    --font-public-size-mobile-botao: 18px;
+}
