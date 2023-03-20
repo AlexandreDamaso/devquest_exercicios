@@ -1,0 +1,98 @@
+:root {
+    --cor-background: #5BC241;
+    --cor-fonte-clara: #FFFFFF;
+    --cor-fonte-escura: #000000;
+    --font-public-family: 'Public Sans', sans-serif;
+    --font-public-weight-light: 300;
+    --font-public-weight-regular: 400;
+    --font-public-weight-extrabold: 800;
+    --font-public-size-desktop-logo: 20px;
+    --font-public-size-desktop-menu: 15px;
+    --font-public-size-desktop-botao: 15px;
+    --font-public-size-mobile-logo: 40px;
+    --font-public-size-mobile-menu: 40px;
+    --font-public-size-mobile-botao: 18px;
+}
+* {
+    box-sizing: border-box;
+    font-family: var(--font-public-family);
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+.header-container {
+    width: 1280px;
+    height: 120px;
+    margin: 0px 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo,
+.opcoes,
+.menu {
+    display: flex;
+    align-items: center;
+}
+ul, li {
+    list-style: none;
+}
+.title {
+    font-size: var(--font-public-size-desktop-logo);
+    font-weight: var(--font-public-weight-extrabold);
+    margin-left: 5px;
+}
+.menu li {
+    margin: 9px;
+    padding: 11px 6px;
+    font-size: var(--font-public-size-desktop-menu);
+    font-weight: var(--font-public-weight-regular);
+    cursor: pointer;
+}
+.menu li:hover,
+.menu .ativo {
+    background-color: var(--cor-background);
+    color: var(--cor-fonte-clara);
+}
+.botao {
+    background-color: var(--cor-background);
+    padding: 11px 21px;
+    text-decoration: none;
+    font-size: var(--font-public-size-desktop-botao);
+    font-weight: var(--font-public-weight-light);
+    color: var(--cor-fonte-clara);
+    border-radius: 10px;
+    margin-left: 18px;
+}
+@media (max-width: 800px) {
+    .botao {
+        margin: 0;
+        padding: 15px 23px;
+        font-size: var(--font-public-size-mobile-botao);
+    }
+    .logo {
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+    .title {
+        font-size: var(--font-public-size-mobile-logo);
+        font-weight: var(--font-public-weight-extrabold);
+        margin-left: 5px;
+    }
+    .menu {
+        padding: 0;
+    }
+    .header-container,
+    .menu,
+    .opcoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu li {
+        padding: 17px 40px;
+        font-size: var(--font-public-size-mobile-menu);
+        font-weight: var(--font-public-weight-regular);
+        cursor: pointer;
+    }
+}
